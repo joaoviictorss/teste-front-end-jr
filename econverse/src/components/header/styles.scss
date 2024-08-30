@@ -1,0 +1,29 @@
+@use "../../styles/variables.scss";
+
+header {
+  color: variables.$gray-primary;
+
+  .header-infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 8px 24px;
+  }
+
+  .header-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+  }
+
+  .text-contrast {
+    color: variables.$pink-primary;
+    font-weight: 600;
+  }
+
+  .text-default {
+    color: variables.$gray-primary;
+  }
+}

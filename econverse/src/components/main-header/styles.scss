@@ -1,0 +1,44 @@
+@use "../../styles/variables.scss";
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0px 48px;
+
+  ul {
+    display: flex;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.search-input {
+  padding: 12px 0px;
+
+  .input-container {
+    background-color: #f6f5f2;
+    padding: 14px 24px;
+    border-radius: 10px;
+    width: 660px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      border: none;
+      background: transparent;
+      outline: none;
+      width: 100%;
+      color: variables.$gray-primary;
+
+      &::placeholder {
+        color: variables.$gray-primary;
+      }
+    }
+  }
+}
