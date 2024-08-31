@@ -3,9 +3,7 @@ import "./styles.scss";
 import { useState } from "react";
 
 const NavBar = () => {
-  const [selectedCategory, setSelectedCategory] = useState(
-    "Todas as categorias"
-  );
+  const [selectedCategory, setSelectedCategory] = useState("Todas Categorias");
 
   const routes = [
     {

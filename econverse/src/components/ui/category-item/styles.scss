@@ -1,0 +1,48 @@
+@use "../../../styles/variables.scss";
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  color: #4e4e4e;
+  font-size: 16px;
+  text-wrap: nowrap;
+
+  .icon-container {
+    width: 128px;
+    height: 128px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 13%);
+  }
+  &.inactive {
+    svg {
+      path {
+        fill: #000000;
+      }
+    }
+  }
+
+  &.active {
+    color: variables.$pink-primary;
+
+    .icon-container {
+      background-color: white;
+    }
+
+    svg {
+      path {
+        fill: variables.$pink-primary;
+      }
+    }
+  }
+}

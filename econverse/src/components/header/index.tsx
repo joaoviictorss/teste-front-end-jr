@@ -23,7 +23,7 @@ const Header = () => {
             </span>
           </div>
           <div className="header-item">
-            <Icon name="CreditCard" />
+            <Icon name="CreditCard" className="credit-card" />
             <span className="text-contrast">
               Parcele <span className="text-default">suas compras</span>
             </span>

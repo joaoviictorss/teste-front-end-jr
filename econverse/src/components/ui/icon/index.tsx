@@ -19,15 +19,7 @@ const Icon = ({
     return null;
   }
 
-  return (
-    <img
-      src={IconComponent}
-      alt={name}
-      width={width}
-      height={height}
-      className={className}
-    />
-  );
+  return <IconComponent className={className} height={height} width={width} />;
 };
 
 export default Icon;

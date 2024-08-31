@@ -1,0 +1,14 @@
+@use "../../styles/variables.scss";
+
+.slider {
+  overflow: hidden;
+  margin: 53px 0px 16px 0px;
+}
+
+.inner {
+  display: flex;
+  gap: 53px;
+  padding: 8px;
+}
+
+

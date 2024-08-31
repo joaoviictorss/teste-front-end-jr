@@ -1,0 +1,29 @@
+@use "../../styles/variables.scss";
+
+.product-nav {
+  ul {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+
+    li {
+      display: flex;
+      flex: 1;
+    }
+    .item {
+      border: 1px solid #bdbdbd;
+      background-color: transparent;
+      width: 100%;
+      font-size: 16;
+      cursor: pointer;
+      padding: 12px 0px;
+      flex: 1;
+      text-transform: uppercase;
+
+      &.active {
+        color: variables.$pink-primary;
+        font-weight: bold;
+      }
+    }
+  }
+}

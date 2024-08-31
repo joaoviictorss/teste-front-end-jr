@@ -1,0 +1,26 @@
+.slider-products-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+
+  .slider-products {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    overflow-y: hidden;
+    padding: 12px;
+    scroll-behavior: smooth;
+    max-width: 80rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .slider-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
