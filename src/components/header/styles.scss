@@ -7,7 +7,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 120px;
+    gap: 20px;
     padding: 8px 24px;
   }
 
@@ -25,5 +25,11 @@ header {
 
   .text-default {
     color: variables.$gray-primary;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-infos {
+    gap: 120px;
   }
 }

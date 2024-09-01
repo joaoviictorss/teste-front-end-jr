@@ -19,7 +19,7 @@
   }
 
   .banner-content {
-    width: 50%;
+    width: 70%;
     height: 400px;
     color: variables.$white;
     display: flex;
@@ -27,12 +27,12 @@
     justify-content: center;
 
     h1 {
-      font-size: 48px;
+      font-size: 30px;
       z-index: 20;
       font-weight: 600;
     }
     span {
-      font-size: 36px;
+      font-size: 24px;
       z-index: 20;
       font-weight: 600;
     }
@@ -42,6 +42,21 @@
       padding: 16px 0px;
       margin-top: 35px;
       font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+
+    .banner-content {
+      width: 50%;
+      h1 {
+        font-size: 48px;
+      }
+      span {
+        font-size: 36px;
+      }
     }
   }
 }

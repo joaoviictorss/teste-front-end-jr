@@ -6,7 +6,7 @@ import Icon from "../ui/icon";
 const MainHeader = () => {
   return (
     <div className="main-header">
-      <img src={Logo} alt="Logo" />
+      <img src={Logo} alt="Logo" className="logo"/>
       <div className="search-input">
         <div className="input-container">
           <input type="text" placeholder="O que você está buscando?" />
