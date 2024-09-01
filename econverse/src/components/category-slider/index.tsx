@@ -8,8 +8,6 @@ import CategoryItem from "../ui/category-item";
 import { motion } from "framer-motion";
 
 const CategorySlider = () => {
- 
-
   const [selectedCategory, setSelectedCategory] = useState("Tecnologia");
 
   const routes = [
@@ -74,7 +72,7 @@ const CategorySlider = () => {
       icon: "Sushi",
     },
   ];
-  
+
   const slider = useRef<HTMLDivElement>(null);
   const [sliderWidth, setSliderWidth] = useState(0);
 

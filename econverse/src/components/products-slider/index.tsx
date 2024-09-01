@@ -1,26 +1,17 @@
 import { Product } from "../../types";
 import "./styles.scss";
-import { motion } from "framer-motion";
+import { useRef } from "react";
 
 import ProductCard from "../ui/product-card";
-import Container from "../ui/container";
-import { useEffect, useRef, useState } from "react";
 import Icon from "../ui/icon";
 
 interface ProductSliderProps {
   data: Product[];
+  openModal: (data: Product) => void;
 }
 
-const ProductSlider = ({ data }: ProductSliderProps) => {
+const ProductSlider = ({ data, openModal }: ProductSliderProps) => {
   const slider = useRef<HTMLDivElement>(null);
-
-  const [sliderWidth, setSliderWidth] = useState(0);
-
-  useEffect(() => {
-    setSliderWidth(slider.current?.scrollWidth! - slider.current?.offsetWidth!);
-  }, []);
-
-  // Calcula o tamanho da div slider
 
   const handleLeftClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event?.preventDefault();
@@ -44,11 +35,17 @@ const ProductSlider = ({ data }: ProductSliderProps) => {
         <Icon name="LeftArrow" />
       </button>
 
-      <motion.div className="slider-products" ref={slider}>
-        {data.map((product) => (
-          <ProductCard data={product} key={product.productName} />
-        ))}
-      </motion.div>
+      <div className="slider-products" ref={slider}>
+        <ul className="inner">
+          {data.map((product) => (
+            <ProductCard
+              data={product}
+              key={product.productName}
+              openModal={openModal}
+            />
+          ))}
+        </ul>
+      </div>
 
       <button onClick={handleRigthClick} className="slider-button">
         <Icon name="RightArrow" />

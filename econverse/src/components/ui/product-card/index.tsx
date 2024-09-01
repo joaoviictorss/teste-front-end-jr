@@ -6,11 +6,12 @@ import { formatCurrency } from "../../../lib/utils";
 
 interface ProductCardProps {
   data: Product;
+  openModal: (data: Product) => void;
 }
 
-const ProductCard = ({ data }: ProductCardProps) => {
+const ProductCard = ({ data, openModal }: ProductCardProps) => {
   return (
-    <div className="product-card">
+    <li className="product-card">
       <div className="image-container">
         <img src={data.photo} alt={data.productName} />
       </div>
@@ -24,8 +25,10 @@ const ProductCard = ({ data }: ProductCardProps) => {
         <span className="paymant-methods">ou 2x de R$ 49,95 sem juros</span>
         <span className="free-shipping">Frete grátis</span>
       </div>
-      <Button className="buy-button">Comprar</Button>
-    </div>
+      <Button className="buy-button" onClick={() => openModal(data)}>
+        Comprar
+      </Button>
+    </li>
   );
 };
 

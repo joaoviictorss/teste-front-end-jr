@@ -1,0 +1,64 @@
+.brands-slider-container {
+  position: relative;
+  margin-bottom: 80px;
+
+  .button-slider {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 13%);
+    cursor: pointer;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      path {
+        fill: #0080bf;
+      }
+    }
+  }
+}
+
+.left-button-slider {
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+.rigth-button-slider {
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+
+.brands-slider {
+  overflow-x: scroll;
+  padding: 0px 20px;
+  margin-top: 50px;
+
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    padding: 8px;
+    gap: 40px;
+
+    a {
+      width: 211px;
+      height: 211px;
+      border-radius: 50%;
+      box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 13%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
