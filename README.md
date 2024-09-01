@@ -1,31 +1,47 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
-### Vem ser #Econverse!
+# Teste Econverse: Vaga Estágio Desenvolvedor Front-End
 
-Segue abaixo as instruções para a execução do teste.
+Este projeto é uma replicação de uma página de loja virtual, desenvolvida como parte do processo seletivo para a vaga de Estágio em Desenvolvimento Front-End na Econverse. A aplicação foi construída utilizando **React** e **TypeScript** para garantir um código mais robusto e escalável.
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+## Stack utilizada
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+- **[Vite](https://vitejs.dev/)**: Utilizado para inicializar e servir o projeto durante o desenvolvimento, além de realizar o build para produção.
+- **[TypeScript](https://www.typescriptlang.org/)**: Utilizado para adicionar tipagem ao JavaScript, proporcionando maior segurança e produtividade durante o desenvolvimento.
+- **[Framer Motion](https://www.framer.com/motion/)**: Utilizado para criar animações suaves e interativas no projeto.
+- **[Sass](https://sass-lang.com/)**: Utilizado para estilização, permitindo a utilização de funcionalidades avançadas no CSS.
+## Rodando localmente
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+### Pré-requisitos
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
-**Boa sorte! ;)**
+- **[Node.js](https://nodejs.org/)**: Node.js é necessário para rodar o ambiente de desenvolvimento e o build do projeto.
+- **[Git](https://git-scm.com/)**: Utilizado para clonar o repositório do projeto.
+
+### Passos para Configuração
+
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/joaoviictorss/teste-front-end-jr.git
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd teste-front-end-jr
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie a aplicação localmente
+
+```bash
+  npm run dev
+```
+
